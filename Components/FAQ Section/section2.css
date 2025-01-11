@@ -1,0 +1,104 @@
+.faq-container {
+    width: 80%;
+    margin: 0 auto;
+    margin-top: 50px;
+    font-family: Arial, sans-serif;
+  }
+  .faq-item {
+    width: 720px;
+    margin: 10px 0;
+    padding: 10px;
+    padding-right: 20px;
+    padding-bottom: 20px;
+    margin-top: 20px;
+    margin-left: 250px;
+    background: #f9f9f9;
+    transition: all 0.3s ease;
+    border-bottom: 1px solid #ddd;
+  }
+  .faq-item.active {
+    background: #f8f8f8;
+  }
+  .faq-question {
+    display: flex;
+    justify-content: space-between;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 18px;
+  }
+  .faq-question span {
+    transition: transform 0.3s ease;
+  }
+  .faq-answer {
+    margin-top: 10px;
+    font-size: 16px;
+    font-weight:500;
+    line-height: 1.5;
+    color: #333;
+  }
+  .action{
+    border: 2px solid rgb(185, 184, 184);
+    border-radius: 50%;
+    width: 30px;
+    text-align: center;
+    color: rgb(185, 184, 184);
+  }
+  .faq-item:not(.active) .faq-question span:last-child {
+    transform: rotate(0deg);
+  }
+  .faq-item.active .faq-question span:last-child {
+    transform: rotate(180deg);
+  }
+  
+  @media (max-width: 768px) {
+    .faq-container {
+        width: 90%; /* Increase width to use more space on tablet */
+    }
+
+    .faq-item {
+        width: 100%; /* Full width for better responsiveness */
+        margin-left: 0; /* Remove left margin */
+        padding: 15px; /* Add padding for better spacing */
+    }
+
+    .faq-question {
+        font-size: 16px; /* Slightly smaller font size for tablets */
+    }
+
+    .faq-answer {
+        font-size: 14px; /* Adjust answer text size */
+    }
+
+    .action {
+        width: 28px; /* Smaller action icon for tablets */
+        height: 28px; /* Adjust action icon height */
+    }
+}
+
+/* Responsive design for small screens (mobile phones) */
+@media (max-width: 480px) {
+    .faq-container {
+      width: 330px;
+        width: 100%; 
+        padding: 0 10px;
+    }
+
+    .faq-item {
+        width: 80%; /* Ensure full width for mobile */
+        padding: 12px; /* Adjust padding for mobile */
+        margin-left: 0; /* Remove any left margin */
+    }
+
+    .faq-question {
+        font-size: 14px; /* Smaller font size for mobile */
+    }
+
+    .faq-answer {
+        font-size: 12px; /* Smaller answer text size for mobile */
+    }
+
+    .action {
+        width: 25px;
+        height: 25px; /* Adjust action icon height */
+    }
+}

@@ -1,0 +1,108 @@
+.contact-section {
+    background-color: #f9fafc;
+    border-radius: 10px;
+    padding: 40px;
+    text-align: center;
+    margin: 20px auto;
+    margin-bottom: 80px;
+  }
+  
+  .contact-content {
+    max-width: 600px;
+    margin: 0 auto;
+  }
+  
+  .avatars {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+    margin-left: -30px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  .avatars:first-child {
+    margin-left: 0; /* Remove margin for the first avatar */
+  }
+  .avatars img {
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    border: 2px solid rgb(236, 235, 235);
+    box-shadow: 0 2px 4px rgba(13, 13, 13, 0.1);
+  }
+  h2 {
+    font-size: 20px;
+    font-weight: bold;
+  }
+  p {
+    font-size: 18px;
+    color: #666;
+    padding-bottom: 25px;
+  }
+  .contact-button {
+    background-color: #ff4d4f;
+    color: white;
+    border: none;
+    font-weight: bold;
+    border-radius: 10px;
+    padding: 14px 24px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }  
+  .contact-button:hover {
+    background-color: #8e01ec;
+  }
+  
+  @media (max-width: 768px) {
+    .contact-content {
+        padding: 0 20px; /* Add some padding for tablets */
+    }
+
+    .avatars img {
+        width: 60px;
+        height: 60px;
+    }
+
+    h2 {
+        font-size: 18px; /* Slightly reduce heading size for tablets */
+    }
+
+    p {
+        font-size: 16px; /* Reduce font size for better readability */
+    }
+
+    .contact-button {
+        font-size: 14px; /* Slightly reduce the font size of the button */
+        padding: 12px 20px; /* Adjust padding for tablets */
+    }
+}
+
+/* Responsive design for small screens (mobile phones) */
+@media (max-width: 480px) {
+    .contact-section {
+        padding: 20px; /* Adjust padding for mobile */
+    }
+
+    .contact-content {
+        padding: 0 10px; /* Add smaller padding for mobile */
+    }
+
+    .avatars img {
+        width: 50px;
+        height: 50px; /* Reduce avatar size on mobile */
+    }
+
+    h2 {
+        font-size: 16px; /* Reduce heading size for mobile */
+    }
+
+    p {
+        font-size: 14px; /* Reduce paragraph font size */
+        padding-bottom: 15px; /* Adjust spacing below the paragraph */
+    }
+
+    .contact-button {
+        font-size: 14px; /* Keep button font size consistent */
+        padding: 10px 18px; /* Adjust button padding */
+    }
+}

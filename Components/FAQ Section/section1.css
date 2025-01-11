@@ -24,7 +24,7 @@ p{
     }
 }
 
-/* Responsive design for small screens (mobile phones) */
+
 @media (max-width: 480px) {
     .text {
         width: 330px;
